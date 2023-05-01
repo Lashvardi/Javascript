@@ -39,16 +39,13 @@ document.getElementsByTagName("p")[0].style.fontSize = "35px";
 // ? querySelector();
 
 document.querySelector("p").style.color = "blue";
-// * querySelector() შეუძლია აიღოს ნებისმიერი ელემენტი მთავარია მივუთითოთ სელექტორი.
+// * querySelector() შეუძლია აიღოს ნებისმიერი ელემენტი მთავარია მივახვედროთ.
 
-// * სელექტორები ID, Class, Tag და ა.შ.
+// * ატრიბუტები ID, Class, Tag და ა.შ.
 
-// * ID ის შემთხვევაში უნდა გავუწეროთ # (Hashtag) document.querySelector("#demo").style.color = "blue";
-// * Class ის შემთხვევაში უნდა გავუწეროთ . (Dot) document.querySelector(".demo").style.color = "blue";
+// * ID ის შემთხვევაში უნდა გავუწეროთ # (ჰეშთეგი) document.querySelector("#demo").style.color = "blue";
+// * Class ის შემთხვევაში უნდა გავუწეროთ . (წერტილი) document.querySelector(".demo").style.color = "blue";
 // * Tag ის შემთხვევაში უნდა გავუწეროთ ელემენტის სახელი document.querySelector("p").style.color = "blue";
-
-
-
 
 // ! Alerts
 let FirstName = "Aleksandre";

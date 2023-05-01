@@ -1,6 +1,7 @@
 // TODO: დავაყენოთ Live Server.
 // TODO: დავაყენოთ Better Comments.
 // TODO: დავაყენოთ Prettier.
+// TODO: დავაყენოთ Code Runner
 
 
 // ? getElementById();
@@ -39,7 +40,8 @@ document.getElementsByTagName("p")[0].style.fontSize = "35px";
 // ? querySelector();
 
 document.querySelector("p").style.color = "blue";
-// * querySelector() შეუძლია აიღოს ნებისმიერი ელემენტი მთავარია მივახვედროთ.
+// * querySelector() შეუძლია აიღოს ნებისმიერი ელემენტი მთავარია მივახვედროთ რა გვჭირდება.
+// * ეს დამოკიდებულია იმაზე თუ რომელ ატრიბუტით ვირჩევთ ელემენტს.
 
 // * ატრიბუტები ID, Class, Tag და ა.შ.
 
@@ -60,6 +62,10 @@ let LastName = "Beridze";
 // alert(`Hello ${FirstName} ${LastName}`);
 
 
+function myFunction() {
+    alert("Hello From Buttoon")
+}
+
 // ! ატრიბუტების ცვლა
 document.getElementById("ImageDemo").src = "https://picsum.photos/200/300";
 // * ჯავასკრიპტიდან შეგვიძლია ვცვალოთ როგორც ტეგის კონტენტი ასევე შეგვიძლია ვცვალოთ ატრიბუტები.
@@ -68,12 +74,77 @@ document.getElementById("ImageDemo").src = "https://picsum.photos/200/300";
 // * src, href, alt, title, class, id და ა.შ.
 
 
+// ! ცვლადები
+var x = 5;
+var y = 6;
+var z = x + y;
+
+// ? var ცვლადი
+
+// * var არის ცვლადის გამოცხადების ყველაზე ძველი საშუალება.
+// * var დღესდღეობით ჩაანცავლა let და const მა
+
+// ? let ცვლადი
+
+let a = 11;
+let b = 25;
+
+let sum = a + b;
+
+// ! მათ შორის სხვაობა
+
+
+// ? Let ის მაგალითი
+function Difference() {
+    let message = "Hello, world!";
+    console.log(message); // გამოიტანს "Hello, world!"
+  
+    if (true) {
+      let message = "Goodbye, world!";
+      console.log(message); // გამოიტანს "Goodbye, world!"
+    }
+  
+    console.log(message); // გამოიტანს "Hello, world!"
+}
+  
+Difference()
+
+// ? Var ის მაგალითი
+
+// function Difference() {
+//     var message = "Hello, world!";
+//     console.log(message); // გამოიტანს "Hello, world!"
+  
+//     if (true) {
+//         var message = "Goodbye, world!";
+//       console.log(message); // გამოიტანს "Goodbye, world!"
+//     }
+  
+//     console.log(message); // გამოიტანს "Goodbye, world!"
+// }
+// Difference()
+
+// ! Const
+
+const num1 = 5;
+num1 = 8;
+console.log(num1);
+
+// * ამ მომენტში გამოვარდება ერორი რადგან const-ი არის კონსტანტური. ანუ მისი სხვა მნიშნველობით გადანიჭება არ შეიძლება.
+
+
+
+  
+
+
+
+
 
 
 //TODO: დავალება
 
 //? შევქმნათ ორი ღილაკი HTML ში. გამოვიყენოთ ფაილში მოცემული ორი სურათი.
-//? ერთი ღილაკი უნდა აქრობდეს ნათურას მეორე კი უნდა ანთებდეს. გამოვიყენოტ
+//? ერთი ღილაკი უნდა აქრობდეს ნათურას მეორე კი უნდა ანთებდეს. გამოვიყენოთ
 //? ის რაც ავხსენით გაკვეთილზე.
 
 

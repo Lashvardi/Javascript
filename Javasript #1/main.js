@@ -3,22 +3,26 @@
 // TODO: დავაყენოთ Prettier.
 
 
-
 // ? getElementById();
 
 document.getElementById("demo").innerHTML = "<h1>Hello World!</h1";
 document.getElementById("demo1").innerText = "<h1>Hello World!</h1";
-// * getElementById() პოულობს ელემენტს მისი იდენტიფიკატორის მიხედვით (ID) ატრიბუტით და აბრუნებს ელემენტს რომელიც მოიძებნა.
-// * .innerHTML წერს ელემენტში შეტანილ ტექსტს ან HTML კოდს.
+// * getElementById() პოულობს ელემენტს მისი იდენტიფიკატორის მიხედვით (ID) ატრიბუტით.
+// * .innerHTML წერს ელემენტში ჩვენს მიერ შეტანილ ტექსტს ან HTML კოდს.
 
 // * .innerText წერს ელემენტში ტექსტს.
+
+// ! დავიმახსოვროთ რომ innerHTML აღიქვავს HTML კოდს და გამოსახავს მას ჩვეულებრივად.
+// ! ხოლო innerText აღიქვამს მხოლოდ ტექსტს შესაბამისად გამოგვიტანს HTML კოდს უბრალოდ ტექსტურად.
 
 
 // ? getElementsByClassName();
 
 document.getElementsByClassName("getElementByStyle")[0].innerHTML = "<h1>Hello World!</h1>";
+
 // * getElementByClassName() პოულობს ელემნტს მისი კლასის მიხედვით
-// * [0] რადგანაც ერთ კლასი შეიძლება ქონდეს ბევრ ელემენტს ამით ვახვედრებთ თუ რიგით რომელ ელემენტზე გვინდა
+// * რა არის [0]. ეს არის Index ი იმისა თუ რომელ ელემენტზე უნდა მოახდინსო ზეგავლენა.
+// * რადგანაც ერთ კლასი შეიძლება ქონდეს ბევრ ელემენტს ამით ვახვედრებთ თუ რიგით რომელ ელემენტზე გვინდა
 // * მოვახდინოთ ცვლილება.
 
 
@@ -26,7 +30,7 @@ document.getElementsByClassName("getElementByStyle")[0].innerHTML = "<h1>Hello W
 
 document.getElementsByTagName("p")[0].innerHTML = "<h1>Hello From P Tag</h1>";
 
-// ! Style With Javascript
+// ! ელემენტის გასტილვა ჯავასკრიპტით
 
 document.getElementsByTagName("p")[0].style.color = "red";
 document.getElementsByTagName("p")[0].style.fontSize = "35px";
@@ -54,12 +58,12 @@ let LastName = "Beridze";
 // alert("Hello!" + " " + FirstName + " " + LastName);
 
 
-// ! String Interpolation
+// ! String Interpolation (სტრინგის ინტერპოლაცია)
 
 // alert(`Hello ${FirstName} ${LastName}`);
 
 
-// ! Attributeb-ის ცვლა
+// ! ატრიბუტების ცვლა
 document.getElementById("ImageDemo").src = "https://picsum.photos/200/300";
 // * ჯავასკრიპტიდან შეგვიძლია ვცვალოთ როგორც ტეგის კონტენტი ასევე შეგვიძლია ვცვალოთ ატრიბუტები.
 
@@ -68,9 +72,12 @@ document.getElementById("ImageDemo").src = "https://picsum.photos/200/300";
 
 
 
+
 //TODO: დავალება
 
-//?  შევქმნათ ორი ღილაკი ერთი აქრობს ნათურას მეორე ანთებს.
+//? შევქმნათ ორი ღილაკი HTML ში. გამოვიყენოთ ფაილში მოცემული ორი სურათი.
+//? ერთი ღილაკი უნდა აქრობდეს ნათურას მეორე კი უნდა ანთებდეს. გამოვიყენოტ
+//? ის რაც ავხსენით გაკვეთილზე.
 
 
 

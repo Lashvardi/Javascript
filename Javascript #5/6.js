@@ -8,7 +8,11 @@ const evenNumbers = numbers1.filter(num => num % 2 === 0);
 console.log(evenNumbers); // Output: [2, 4]
 
 
-
+const books = [
+    { title: 'Harry Potter', author: 'J.K. Rowling' },
+    { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
+    { title: '1984', author: 'George Orwell' }
+  ];
 const bookTitles = books.map(book => book.title);
 console.log(bookTitles); // Output: ['Harry Potter', 'To Kill a Mockingbird', '1984']
   
@@ -16,15 +20,6 @@ console.log(bookTitles); // Output: ['Harry Potter', 'To Kill a Mockingbird', '1
 const words = ['apple', 'banana', 'orange', 'grape'];
 const shortWords = words.filter(word => word.length < 6);
 console.log(shortWords); // Output: ['apple', 'grape']
-
-const books = [
-  { title: 'Harry Potter', author: 'J.K. Rowling', price: 200 },
-  { title: 'To Kill a Mockingbird', author: 'Harper Lee', price: 150 },
-  { title: '1984', author: 'George Orwell', price: 100 }
-];
-const Cheapbooks = books.filter(book => book.price / 12 < 10);
-console.log(Cheapbooks)
-
 
 
 const numbers3 = [1, 2, 3, 4, 5];
@@ -68,27 +63,6 @@ console.log(minimumi); // Output: -200
 
 const random = Math.random();
 console.log(random); // Output: 0.9362944283730668
-
-
-
-// რანდომ
-
-var randomNumber = Math.random();
-console.log(randomNumber);
-
-
-var colors = ["red", "blue", "green", "yellow", "orange"];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
-console.log(randomColor);
-
-
-function getRandomFloat(min, max) {
-  return Math.random() * (max - min) + min;
-}
-
-var randomFloat = getRandomFloat(1.5, 4.5);
-console.log(randomFloat);
-
 
 
 

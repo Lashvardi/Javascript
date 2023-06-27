@@ -33,7 +33,7 @@ const books = [
   { title: 'To Kill a Mockingbird', author: 'Harper Lee', price: 150 },
   { title: '1984', author: 'George Orwell', price: 100 }
 ];
-const Cheapbooks = books.filter(book => book.price / 12 < 10);
+const Cheapbooks = books.filter(book => book.price / 12 <= 10);
 console.log(Cheapbooks)
 
 
@@ -71,15 +71,32 @@ const random = Math.random();
 console.log(random); // Output: 0.9362944283730668
 
 
+let num = 5.56789;
+
+console.log(Math.floor(num));
+console.log(Math.ceil(num));
+console.log(Math.round(num));
+
+
+
+
+
+
+
 // რანდომ
-
 var randomNumber = Math.random();
-console.log(randomNumber);
+var flooredNumber = Math.floor(randomNumber * 10)
+console.log(flooredNumber);
 
+
+let RandomDiv = document.querySelector("#random_div");
 
 var colors = ["red", "blue", "green", "yellow", "orange"];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+RandomDiv.style = `background-color: ${randomColor}` 
 console.log(randomColor);
+
 
 
 function getRandomFloat(min, max) {
@@ -88,4 +105,56 @@ function getRandomFloat(min, max) {
 
 var randomFloat = getRandomFloat(1.5, 4.5);
 console.log(randomFloat);
+
+
+
+
+
+
+//dates
+const currentDate = new Date();
+console.log(currentDate);
+
+
+const specificDate = new Date('2023-05-24T12:00:00');
+console.log(specificDate);
+
+
+const date1 = new Date();
+const year = date1.getFullYear();
+const month = date1.getMonth(); // Month is zero-based (0-11)
+const day = date1.getDate();
+const hour = date1.getHours();
+const minute = date1.getMinutes();
+const second = date1.getSeconds();
+
+console.log(year, month, day, hour, minute, second);
+
+
+const date = new Date();
+date.setDate(date.getDate() + 7); // Adds 7 days
+console.log(date);
+
+const gasvlis_tarigi = new Date('2023-05-31T17:57:28.635Z');
+const gasvlis_tarigis_dge = gasvlis_tarigi.getDate();
+
+const axlandeli_tarigi = new Date();
+const axlandeli_tarigis_dge = axlandeli_tarigi.getDate()
+console.log(gasvlis_tarigis_dge - axlandeli_tarigis_dge);
+
+
+
+function formatTime(date) {
+  const year = String(date.getFullYear());
+  const hours = String(date.getHours());
+  const minutes = String(date.getMinutes());
+  const seconds = String(date.getSeconds());
+  
+  return `Weli${year} / / /${hours}:${minutes}:${seconds}`;
+}
+
+const currentDate1 = new Date();
+const formattedTime = formatTime(currentDate1);
+console.log(formattedTime);
+
 

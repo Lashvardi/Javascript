@@ -65,3 +65,38 @@ function sayHelloToUser(name, surname) {
 // * ჩვენმა ფუნქციამ უნდა გამოთვალოს ფართობი და დაგვიბრუნოს
 // * ფართობი გამოვიტანოთ ალერტით
 
+// მივიღოთ მნიშვნელობა Input-იდან ფუნქციის მეშვეობით
+
+function getValue(){
+    let number = document.getElementById("getValueFromMe").value;
+
+    let outPut = document.getElementById("output");
+    outPut.innerHTML = number;
+}
+
+
+
+// ! მოვუსმინოთ ღილაკზე დაჭერას
+// ? ამისი ორი გზა გვაქვს
+
+// ? პირველი გზა
+let button = document.getElementById("button");
+button.addEventListener("click", getValue);
+
+// ? მეორე გზა
+// ? მოვუსმინოთ ღილაკზე დაჭერას პირდაპირ HTML-ში
+//   <button className="button" id="button" onClick="getValue()">მნიშვნელობის აღება</button>
+
+// Todo: საშინაო დავალება (მარტივი კალკულატორი)
+// ? შექმენით 2 ინფუთი
+// ? შექმენით 4 ცალი ღილაკი
+
+// ? ღილაკების ფუნქციონალი
+
+// ? მიმატება
+// ? გამოკლება
+// ? გამრავლება
+// ? გაყოფა
+
+// დაწერეთ ამ ღილაკების ფუნქციონალი და შედეგი გამოიტანეთ HTML- ში
+

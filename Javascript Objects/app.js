@@ -43,11 +43,11 @@ var car = {
     started: false,
     start: function() {
       this.started = true;
-      console.log("მანქანა " + this.brand + " " + this.model + " დაიქოქა.");
+      console.log(`Car ${this.brand} ${this.model} started.`);
     },
     stop: function() {
       this.started = false;
-      console.log("Car " + this.brand + " " + this.model + " stopped.");
+      console.log(`Car ${this.brand} ${this.model} stopped.`);
     }
   };
   

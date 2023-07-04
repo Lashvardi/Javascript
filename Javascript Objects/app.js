@@ -29,6 +29,8 @@ let cars = {
 // ? როგორ მივწვდეთ რომელიმე ელემენტს ობიექტში
 
 console.log(cars.model) // * ამ შემთხვევაში გამოიტანს BMW-ს
+cars.model = "Mercedes"
+console.log(cars.model)
 console.log(cars.color) // * ამ შემთხვევაში გამოიტანს Black-ს
 console.log(cars.year) // * ამ შემთხვევაში გამოიტანს 2020-ს
 console.log(cars.isUsed) // * ამ შემთხვევაში გამოიტანს false-ს
@@ -65,10 +67,11 @@ console.log(car.started) // true
 // ? შევქმნათ მასივი ობიექტების.
 
 var carsDealership = [
-    { brand: "Toyota", model: "Camry", year: 2021 },
-    { brand: "BMW", model: "X5", year: 2020, },
-    { brand: "Mercedes", model: "E-class", year: 2021, }
+    { brand: "Toyota", model: "Camry", year: 2021, img: 'https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-4.jpeg?isig=0&q=75' },
+    { brand: "BMW", model: "X5", year: 2020, img : "https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-4.jpeg?isig=0&q=75" },
+    { brand: "Mercedes", model: "E-class", year: 2021, img : "https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-4.jpeg?isig=0&q=75" }
 ]
+
 
 // ? როგორ მივწვდეთ თითოეულ მანქანას
 // * თითოეულ ობიექტს აქვს ინდექსი რომლის მიხედვიდაც შეგვიძლია მას მივწვდეთ.
@@ -84,13 +87,20 @@ console.log(carsDealership[2].brand) // Mercedes
 let carsDealershipHTML = document.getElementById("carsDealership");
 
 for (let i = 0; i < carsDealership.length; i++) {
-    carsDealershipHTML.innerHTML += `
-        <div class="car">
+    carsDealershipHTML.innerHTML +=        `
+        <div class="car"> 
             <h2>${carsDealership[i].brand} ${carsDealership[i].model}</h2>
             <p>${carsDealership[i].year}</p>
+            <img src="${carsDealership[i].img}" alt="">
         </div>
     `
 }
+
+let colors = ["red", "yellow", "black"]
+
+console.log(colors[0]) // red
+
+
 
 // Todo: საკლასო დავალება ჩვენს CarsDealerships-ს ჩავუმატოთ აღწერილობა და შემდგომ ეს აღწერილობა გამოვიტანოთ HTML-ში.
   

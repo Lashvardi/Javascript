@@ -6,7 +6,7 @@
     width: 50%;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid red;
     border-radius: 5px;
     box-shadow: 0 0 10px #ccc;
 }
@@ -15,4 +15,13 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    color: blue;
+}
+
+
+.car p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: green;
 }

@@ -126,9 +126,9 @@ Difference()
 
 // ! Const
 
-const num1 = 5;
-num1 = 8;
-console.log(num1);
+// const num1 = 5;
+// num1 = 8;
+// console.log(num1);
 
 // * ამ მომენტში გამოვარდება ერორი რადგან const-ი არის კონსტანტური. ანუ მისი სხვა მნიშნველობით გადანიჭება არ შეიძლება.
 

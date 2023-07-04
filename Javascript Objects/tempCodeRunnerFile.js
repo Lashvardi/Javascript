@@ -1,12 +1,27 @@
-var carsDealership = [
-    { brand: "Toyota", model: "Camry", year: 2021, started: false },
-    { brand: "BMW", model: "X5", year: 2020, started: false },
-    { brand: "Mercedes", model: "E-class", year: 2021, started: false }
-]
 
-// ? როგორ მივწვდეთ თითოეულ მანქანას
-// * თითოეულ ობიექტს აქვს ინდექსი რომლის მიხედვიდაც შეგვიძლია მას მივწვდეთ.
+let cars = {
+    model: "BMW",
+    color: "Black",
+    year: 2020,
+    isUsed: false,
+  }
 
-console.log(carsDealership[0]) // { brand: "Toyota", model: "Camry", year: 2021, started: false }
-console.log(carsDealership[1]) // { brand: "BMW", model: "X5", year: 2020, started: false }
-console.log(carsDealership[2].brand) // Mercedes
+//? ჩვენს ამ ობიექტში Cars Key-ები (გასაღებები) იქნება
+
+// * model
+// * color
+// * year
+// * isUsed
+
+
+//? მნიშვნელობები კი
+// * BMW
+// * Black
+// * 2020
+// * false
+
+// ? როგორ მივწვდეთ რომელიმე ელემენტს ობიექტში
+
+console.log(cars.model) // * ამ შემთხვევაში გამოიტანს BMW-ს
+cars.model = "Mercedes"
+console.log(cars.model)

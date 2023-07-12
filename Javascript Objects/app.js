@@ -60,6 +60,9 @@ car.start(); // "Car Toyota Camry started."
 
 console.log(car.started) // true
 
+Object.keys(car);  // აბრუნებს  ობიექტის თვისებებს
+Object.values(car);  // აბრუნებს  ობიექტის მნიშვნელობები
+
 // this Keyword
 
 // * javasript-ში This გვეხმარება მივწვდეთ კონტექსტში არსებულ მნიშვნელობებს.
